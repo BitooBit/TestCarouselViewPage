@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using TestCarouselViewPage.Services;
 using TestCarouselViewPage.Views;
 
 namespace TestCarouselViewPage
@@ -12,9 +11,7 @@ namespace TestCarouselViewPage
         public App()
         {
             InitializeComponent();
-
-            DependencyService.Register<MockDataStore>();
-            MainPage = new MainPage();
+            MainPage = new NavigationPage( new FirstPage());
         }
 
         protected override void OnStart()

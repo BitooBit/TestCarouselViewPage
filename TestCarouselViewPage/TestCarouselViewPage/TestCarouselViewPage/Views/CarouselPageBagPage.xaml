@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestCarouselViewPage.Views.CarouselPageBagPage"
+            xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+            ios:Page.PrefersStatusBarHidden="True"             
+            ios:Page.PrefersHomeIndicatorAutoHidden="True"  >
+
+    <CarouselPage.ItemTemplate BackgroundColor="#293239" >
+        <DataTemplate>
+            <ContentPage BackgroundColor="#293239" >
+                <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" RowSpacing="0" Margin="0"  BackgroundColor="#293239">
+                    <Grid.Padding>
+                        <OnPlatform x:TypeArguments="Thickness" iOS="0,30,0,0" Android="0"/>
+                    </Grid.Padding>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <BoxView BackgroundColor="{Binding Color}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+
+                    <Button Text="Close" Clicked="Button_Clicked" BackgroundColor="Violet" Margin="10" HeightRequest="40" WidthRequest="200" VerticalOptions="End" HorizontalOptions="Center"/>
+
+                </Grid>
+            </ContentPage>
+        </DataTemplate>
+    </CarouselPage.ItemTemplate>
+
+</CarouselPage>

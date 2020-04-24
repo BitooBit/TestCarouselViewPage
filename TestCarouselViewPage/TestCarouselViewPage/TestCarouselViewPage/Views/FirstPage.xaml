@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TestCarouselViewPage.Views.FirstPage"
+             Title="{Binding Title}"
+             x:Name="BrowseItemsPage"
+             >
+
+
+
+
+    <StackLayout>
+        <StackLayout>
+            <Label Text="Carousel Bag Page" BackgroundColor="White" TextColor="Black" FontSize="18" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+            <Button Text="With Navigation bar" Margin="10" Clicked="Button_Clicked" BackgroundColor="Black" TextColor="White"/>
+            <Button Text="Without Navigation bar" Margin="10" Clicked="Button_Clicked_1" BackgroundColor="Black" TextColor="White"/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Carousel Bag View" BackgroundColor="White" TextColor="Black" FontSize="18" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+            <Button Text="With Navigation bar" Margin="10" Clicked="Button_Clicked_2" BackgroundColor="Black" TextColor="White"/>
+            <Button Text="Without Navigation bar" Margin="10" Clicked="Button_Clicked_3" BackgroundColor="Black" TextColor="White"/>
+        </StackLayout>
+    </StackLayout>
+
+
+
+</ContentPage>
